@@ -58,7 +58,7 @@ public class strings_in_java {
     public static void main(String args[]) {
 
         // 1-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        // declaration of  String Temp = "hi";    
+        // declaration of  String Temp_Tower = "hi";    
         // use next for a single word user input in java
         // use nextLine for a line user input in java
         // string count space as well
