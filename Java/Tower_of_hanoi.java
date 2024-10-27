@@ -48,7 +48,7 @@ class Tower_functions extends Tower {
         }
         System.out.println("enter the Disk no.");
         Disk_Input = sc.nextInt();
-        if (Disk_Input && Disk_Input<=5) {
+        if (Disk_Input>=0 && Disk_Input<=5) {
             //does nothing its valid input
         }
         else {
