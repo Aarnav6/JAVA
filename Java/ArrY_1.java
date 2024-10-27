@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ArrY
+public class ArrY_1
 {
 Scanner sc = new Scanner(System.in);
 
@@ -49,7 +49,7 @@ public void show_Arry(int Array[] ,int n) // function to show array
 
 public static void main(String args[])
 {
-    ArrY obj = new ArrY();
+    ArrY_1 obj = new ArrY_1();
     int A[] = obj.input_Arry();
     obj.show_Arry(A,A.length);
 }
