@@ -1,7 +1,7 @@
 class ArrY2 {
 
     public static int arry[] = new int [5];
-    public static int arry1[] = arry; //refrenced or refrencing wowwwwwwwwwwwwwwwWWWWWWWWWWWW!!!!!
+    public static int arry1[] = arry; //refrenced or refrencing array!!
     public static int[] F1 () {
         return arry;
     }
