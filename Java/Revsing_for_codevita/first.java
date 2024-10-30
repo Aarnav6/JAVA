@@ -78,6 +78,7 @@ class patterns {
     }
 }
 
+@SuppressWarnings("unused")
 class first extends patterns
 {
     public static void main(String args[])
