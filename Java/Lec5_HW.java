@@ -1,5 +1,5 @@
 import java.util.*;
-public class Lec5_Homework
+public class Lec5_HW
 {
 public static void main(String args[])
 {

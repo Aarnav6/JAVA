@@ -79,7 +79,7 @@ class patterns {
 }
 
 @SuppressWarnings("unused")
-class first extends patterns
+class revision1 extends patterns
 {
     public static void main(String args[])
     {
