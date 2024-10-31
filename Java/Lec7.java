@@ -1,6 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+//// mam taught functions i learned input handeling as well litlle bit still more to go
 public class Lec7 {
     public static void sum()
     {

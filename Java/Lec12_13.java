@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class strings_in_java {
+public class Lec12_13 {
 
 
     static void String_Reverse1() {
@@ -91,8 +91,8 @@ public class strings_in_java {
         // String1 > String2 : Return any +ve value 
         // String1 = String2 : Return 0
         // String1 > String2 : Return any -ve value
-        String A = "A";
-        String B = "b";
+        String A = "Za";
+        String B = "Zb";
 
         if (A.compareTo(B) == 0) {
             System.out.println("both strings are equal");
@@ -100,9 +100,11 @@ public class strings_in_java {
         else {
             if (A.compareTo(B) > 0) {
                 System.out.println("the string A is bigger than string B");
+                System.out.println("which is " + A);
             }
             else if (A.compareTo(B) < 0) {
                 System.out.println("the string B is bigger than string A");
+                System.out.println("which is " + B);
             }
         }
         
