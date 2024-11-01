@@ -3,6 +3,9 @@ public class All_Unicodes {
         
         
         /*
+                CAN BE USED IN ANY LANGUAGE IN PLACES WHERE YOU USE OUTPUT STREAM INSIDE "USE CODE HERE"
+                I USED THEM IN JAVA
+                
                 **  remember for this to work make sure 
                 1.  you are on UTF-8 Encoding
                 2.  your terminal supports UTF-8 Encoding
