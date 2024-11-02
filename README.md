@@ -14,6 +14,7 @@ I'm currently diving into:
 
 ## 📫 Get in Touch
 - [Email Me](mailto:aarnavs100@gmail.com)
+- [Connect on LinkedIn](www.linkedin.com/in/aarnav-sharma-ab226a2a7)
 
 ## ⚡ Fun Fact
 Did you know that I can solve a Rubik's Cube in under 2 minutes?
