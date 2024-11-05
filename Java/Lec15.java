@@ -80,7 +80,7 @@ class Lec15 extends bit_functions{
         System.out.print("5 in binary is: ");
         Lec15.binaryConvert(5);
 
-        System.out.println("\n\nbit on the 1st position is: " + Lec15.getBit(5,1));
+        System.out.println("\n\nbit on the 2nd position is: " + Lec15.getBit(5,2));
 
         System.out.print("\n\nusing setBit(5,1): ");
         Lec15.binaryConvert(Lec15.setBit(5,1));
@@ -89,7 +89,7 @@ class Lec15 extends bit_functions{
         Lec15.binaryConvert(Lec15.clearBit(5,2));
 
         System.out.print("\n\nusing UpdateBit(5,3,1): ");
-        Lec15.binaryConvert(Lec15.UpdateBit(5,3,1));
+        Lec15.binaryConvert(Lec15.UpdateBit(5,3,9));
 
     }
 }
