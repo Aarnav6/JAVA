@@ -1,3 +1,4 @@
+import java.util.Scanner;
 class bit_functions {
 
     public static int bitRequried (int number) {
@@ -75,10 +76,11 @@ class bit_functions {
 class Lec15 extends bit_functions{
 
     public static void main (String args[]) {
-
-
-        System.out.print("5 in binary is: ");
-        Lec15.binaryConvert(5);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter any number");
+        int num = sc.nextInt();
+        System.out.print(num + " in binary is: ");
+        Lec15.binaryConvert(num);
 
         System.out.println("\n\nbit on the 2nd position is: " + Lec15.getBit(5,2));
 
