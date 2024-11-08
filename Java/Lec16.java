@@ -1,5 +1,6 @@
 ////////////////////////////////////////////////Bubble_Sort TECHNIQUES///////////////////////////////////////////
 import java.util.Scanner;
+// import java.util.function.IntPredicate;
 class Array_Functions {
     protected static int size;
     protected static int InputArray[];
@@ -46,38 +47,19 @@ class Bubble_Sort extends Array_Functions {
         }
     }
 }
-class Selection_Sort extends Bubble_Sort {
-    
-    public static void Selection_SortArray_Ascending() {
-        
-        for (int i=0 ; i<InputArray.length-1 ; i++) {
-            for (int j=0 ; j<InputArray.length-1-i ; j++) {
-                if (InputArray[j] < InputArray[j+1]) {
-                    InputArray[InputArray.length-1-i] = InputArray[j];
-                }
-            }
-        }
-    }
-}
 
 class Lec16 extends Bubble_Sort {
 
     public static void main (String args[]) {
         
-        // Array_Functions.getArray();
-
-        // System.out.print("\nPrinting Array in Ascending: ");
-        // Bubble_Sort.Bubble_SortArray_Ascending();
-        // Array_Functions.showArray();
-        
-        // System.out.print("\nPrinting Array in Descending: ");
-        // Bubble_Sort.Bubble_SortArray_Descending();
-        // Array_Functions.showArray();
-
-
         Array_Functions.getArray();
+
         System.out.print("\nPrinting Array in Ascending: ");
-        Selection_Sort.Selection_SortArray_Ascending();
+        Bubble_Sort.Bubble_SortArray_Ascending();
+        Array_Functions.showArray();
+        
+        System.out.print("\nPrinting Array in Descending: ");
+        Bubble_Sort.Bubble_SortArray_Descending();
         Array_Functions.showArray();
     }
 }
