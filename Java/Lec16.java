@@ -47,7 +47,7 @@ class Bubble_Sort extends Array_Functions {
         }
     }
 }
-
+@SuppressWarnings("unused")
 class Lec16 extends Bubble_Sort {
 
     public static void main (String args[]) {
