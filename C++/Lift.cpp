@@ -60,8 +60,8 @@ public :
                 for (int k=currentFloor ; k>=floor ; k--)
                 {
                     Sleep(1000);
-                   // cout<<""<<endl;
                     cout<<k<<endl;
+                    cout<<"\u2193"<<endl;
                     temp=k;
                 }
                 currentFloor = temp;
@@ -72,8 +72,7 @@ public :
                 for (int k=currentFloor ; k<=floor ; k++)
                 {
                     Sleep(2500);
-                    // right here
-                    cout<<"\u2193"<<endl;
+                    cout<<"\u2191"<<endl;
                     cout<<k<<endl;
                     temp=k;
                 }
@@ -81,7 +80,7 @@ public :
                 cout<<"welcome to the "<<floor<<" floor"<<endl;
                 break;
 
-        case 2:    //case 1 start
+        case 2:    //case 2 start
                 cout  <<"invalid floor number"<<endl;
                 break;
         
@@ -113,21 +112,21 @@ int main ()
         cout<<"want to exit lift Y for or N for no" <<endl;
         cin>>ask;
 
-        if (ask == 'Y')
+        if (ask == 'Y' || ask == 'y')
         {
             cout<<"Have a nice day"<<endl;
             break;
         }
-        else if(ask == 'N')
+        else if(ask == 'N' || ask == 'n')
         {
             cout << "you want to keep going Y for yes or N for no"<<endl;
             cin >> confirm;
 
-            if(confirm == 'Y')
+            if(confirm == 'Y' || confirm == 'y')
             {
                 continue;
             }
-            else if(confirm == 'N')
+            else if(confirm == 'N' || confirm == 'n')
             {
                 cout<<"Have a nice day"<<endl;
                 break;
