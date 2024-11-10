@@ -27,9 +27,8 @@ class Sorter {
                     arry[j+1] = temp;
                 }
             }
-        showArray();
-        System.out.println();
         }
+        showArray();
     }
     public static void selectionSort() {
         getArray();
