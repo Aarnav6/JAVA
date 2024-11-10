@@ -6,7 +6,10 @@ class try_catch {
         System.out.println("its try block");  
         }
         catch (ArithmeticException e){
-        System.out.println("its an errror");
+        System.out.println("its an errror" + e.getMessage());
+        }
+        finally {
+            System.out.println("this code is working fine");
         }
     }
 }
