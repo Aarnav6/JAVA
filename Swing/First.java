@@ -17,7 +17,6 @@ class First {
         JFrame.DO_NOTHING_ON_CLOSE (Value = 0): This option prevents any action from being taken when the close button is clicked. The frame stays open, and you would need to programmatically control its closure if needed. This option is useful if you want to display a confirmation dialog or perform some action before closing the window
         */
     }
-
     public static void main(String[] args) {
         First.frame();
     }
