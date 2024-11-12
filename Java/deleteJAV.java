@@ -58,6 +58,14 @@ public class deleteJAV {
                             System.out.println("Failed to delete: " + file.getName());
                         }
                     }
+                    if (file.isFile() && file.getName().endsWith(".exe")) {
+                        // Delete the file
+                        if (file.delete()) {
+                            System.out.println("Deleted: " + file.getName());
+                        } else {
+                            System.out.println("Failed to delete: " + file.getName());
+                        }
+                    }
                 }
             }
         }
@@ -75,7 +83,14 @@ public class deleteJAV {
                             System.out.println("Failed to delete: " + file.getName());
                         }
                     }
-                }
+                    if (file.isFile() && file.getName().endsWith(".exe")) {
+                        // Delete the file
+                        if (file.delete()) {
+                            System.out.println("Deleted: " + file.getName());
+                        } else {
+                            System.out.println("Failed to delete: " + file.getName());
+                        }
+                    }                }
             }
         }
         if (directory5.exists() && directory5.isDirectory()) {
@@ -92,7 +107,14 @@ public class deleteJAV {
                             System.out.println("Failed to delete: " + file.getName());
                         }
                     }
-                }
+                    if (file.isFile() && file.getName().endsWith(".exe")) {
+                        // Delete the file
+                        if (file.delete()) {
+                            System.out.println("Deleted: " + file.getName());
+                        } else {
+                            System.out.println("Failed to delete: " + file.getName());
+                        }
+                    }                }
             }
         }
     } 
