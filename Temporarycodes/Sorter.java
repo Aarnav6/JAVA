@@ -46,6 +46,17 @@ class Sorter {
         }
         showArray();
     }
+
+    public static void insertionSort() {
+        int arrayMaxIndex = arry.length-1;
+        int sortedArray[] = new int[arry.length];
+        for(int i=0 ; i<arrayMaxIndex ; i++) {
+            if(sortedArray[i] > arry[i]) {
+                // push ahead
+            }
+        }
+    }
+
     public static void main (String args []) {
         Sorter.bubbleSort();
         Sorter.selectionSort();
