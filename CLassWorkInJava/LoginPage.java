@@ -22,6 +22,7 @@ public class LoginPage {
         loginButton.setBounds(150, 200, 100, 30);
         
         loginButton.addActionListener(new ActionListener() {
+            @SuppressWarnings("override")
             public void actionPerformed(ActionEvent e) {
                 String username = userField.getText();
                 String password = new String(passwordField.getPassword());
