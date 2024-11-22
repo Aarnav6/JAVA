@@ -9,6 +9,7 @@ public class deleteJAV {
         String directoryPath4 = "D:/Code/Temporarycodes/java";
         String directoryPath5 = "D:/Code/Unicodes";
         String directoryPath6 = "D:/Code/Swing";
+        String directoryPath7 = "D:/Code/CLassWorkInJava";
 
         File directory1 = new File(directoryPath1);
         File directory2 = new File(directoryPath2);
@@ -16,6 +17,7 @@ public class deleteJAV {
         File directory4 = new File(directoryPath4);
         File directory5 = new File(directoryPath5);
         File directory6 = new File(directoryPath6);
+        File directory7 = new File(directoryPath7);
 
         if (directory1.exists() && directory1.isDirectory()) {
             File[] files = directory1.listFiles();
@@ -92,7 +94,8 @@ public class deleteJAV {
                         } else {
                             System.out.println("Failed to delete: " + file.getName());
                         }
-                    }                }
+                    }                
+                    }
             }
         }
         if (directory5.exists() && directory5.isDirectory()) {
@@ -145,6 +148,30 @@ public class deleteJAV {
                 }
             }
         }
-
+        if (directory7.exists() && directory7.isDirectory()) {
+            // Get all files in the directory
+            File[] files = directory7.listFiles();
+            if (files != null) {
+                for (File file : files) {
+                    // Check if the file ends with .class
+                    if (file.isFile() && file.getName().endsWith(".class")) {
+                        // Delete the file
+                        if (file.delete()) {
+                            System.out.println("Deleted: " + file.getName());
+                        } else {
+                            System.out.println("Failed to delete: " + file.getName());
+                        }
+                    }
+                    if (file.isFile() && file.getName().endsWith(".exe")) {
+                        // Delete the file
+                        if (file.delete()) {
+                            System.out.println("Deleted: " + file.getName());
+                        } else {
+                            System.out.println("Failed to delete: " + file.getName());
+                        }
+                    }                
+                    }
+            }
+        }
     } 
 }
