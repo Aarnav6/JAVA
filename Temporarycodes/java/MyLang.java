@@ -14,6 +14,16 @@ class MyLang {
     }
 
     public static void coderL1 () {
-               
+        for(int i=0 ; i<Arry.length ; i++) {
+            StringBuilder sb = new StringBuilder(Arry[i]);
+            for(int j=0 ; j<sb.length()/2 ; j++) {
+                int lastIndex = sb.length()-1;
+                char first = sb.charAt(j);
+                char last = sb.charAt(lastIndex-j);
+                sb.setCharAt(j, first);
+                sb.setCharAt(j, first);
+
+            }   
+        }
     }
 }

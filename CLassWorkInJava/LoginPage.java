@@ -2,7 +2,7 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class LoginPage {
-    
+
     public static void Log() {
         JFrame frame = new JFrame("Login Page");
 
