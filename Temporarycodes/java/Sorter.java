@@ -34,8 +34,8 @@ class Sorter {
         getArray();
         int arrayMaxIndex = arry.length-1;
         for(int i=0 ; i<arrayMaxIndex ; i++) {
-            int smallestIndex = i;
-            for (int j=i ; j<=arrayMaxIndex ; j++) { // here we did j=i or 0+i because each iteration first element in array is sorted
+            int smallestIndex = i;  // here we did j=i or 0+i because each iteration first element in array is sorted
+            for (int j=i ; j<=arrayMaxIndex ; j++) {
                 if(arry[smallestIndex] > arry[j]){
                     smallestIndex = j;
                 }
@@ -48,17 +48,27 @@ class Sorter {
     }
 
     public static void insertionSort() {
+        getArray();
         int arrayMaxIndex = arry.length-1;
         int sortedArray[] = new int[arry.length];
         for(int i=0 ; i<arrayMaxIndex ; i++) {
-            if(sortedArray[i] > arry[i]) {
-                // push ahead
+            sortedArray[i] = arry[i];
+            for(int j=0 ; j<arry.length ; j++) {
+                if (arry[j+1] < sortedArray[j]) {
+                    for(int k=0 ; k<sortedArray.length ; k++) {
+                        sortedArray[k+1] = sortedArray[k];
+                    }
+                }
+                else if (arry[j+1] > sortedArray[j]) {
+                    sortedArray[j+1] = arry[j+1];
+                }
             }
         }
+        showArray();
     }
-
     public static void main (String args []) {
-        Sorter.bubbleSort();
+        // Sorter.bubbleSort();
+        // Sorter.selectionSort();
         Sorter.selectionSort();
     }
 }
