@@ -17,6 +17,7 @@ class Sorter {
         }
     }
     public static void bubbleSort() {
+        System.out.println("Sorting Using the Bubble Sort Method");
         getArray();
         int arrayMaxIndex = arry.length-1; 
         for(int i=0 ; i<arrayMaxIndex ; i++){
@@ -31,6 +32,7 @@ class Sorter {
         showArray();
     }
     public static void selectionSort() {
+        System.out.println("Sorting Using the Selection Sort Method");
         getArray();
         int arrayMaxIndex = arry.length-1;
         for(int i=0 ; i<arrayMaxIndex ; i++) {
@@ -48,27 +50,22 @@ class Sorter {
     }
 
     public static void insertionSort() {
+        System.out.println("Sorting Using the Insertion Sort Method");
         getArray();
-        int arrayMaxIndex = arry.length-1;
-        int sortedArray[] = new int[arry.length];
-        for(int i=0 ; i<arrayMaxIndex ; i++) {
-            sortedArray[i] = arry[i];
-            for(int j=0 ; j<arry.length ; j++) {
-                if (arry[j+1] < sortedArray[j]) {
-                    for(int k=0 ; k<sortedArray.length ; k++) {
-                        sortedArray[k+1] = sortedArray[k];
-                    }
-                }
-                else if (arry[j+1] > sortedArray[j]) {
-                    sortedArray[j+1] = arry[j+1];
-                }
+        for(int i=1 ; i<arry.length ; i++) {
+            int currentElement = arry[i];
+            int j = i-1;
+            while(j>=0 && currentElement < arry[j]) {
+                arry[j+1] = arry[j];
+                j--;
             }
+            arry[j+1] = currentElement;
         }
         showArray();
     }
     public static void main (String args []) {
-        // Sorter.bubbleSort();
-        // Sorter.selectionSort();
+        Sorter.bubbleSort();
         Sorter.selectionSort();
+        Sorter.insertionSort();
     }
 }
