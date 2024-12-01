@@ -3,6 +3,7 @@ import javax.swing.*;
 
 public class Swing_LoginPage {
 
+    @SuppressWarnings("Convert2Lambda")
     public static void Log() {
         JFrame frame = new JFrame("Login Page");
 
