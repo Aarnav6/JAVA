@@ -2,7 +2,7 @@
 import javax.swing.JFrame;
 
 
-class First {
+class Swing_first {
 
     public static void frame () {
         JFrame f1 =  new JFrame("My Swing Application");  //creating jframe
@@ -18,6 +18,6 @@ class First {
         */
     }
     public static void main(String[] args) {
-        First.frame();
+        Swing_first.frame();
     }
 }
