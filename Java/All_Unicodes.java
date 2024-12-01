@@ -9,7 +9,7 @@ public class All_Unicodes {
                 **  remember for this to work make sure 
                 1.  you are on UTF-8 Encoding
                 2.  your terminal supports UTF-8 Encoding
-                3.  check if your system has all alowance it needs to run UTF-8 Encdoing
+                3.  check if your system has all alowance it needs to run UTF-8 Encoding
 
                 **  For me i went in 
                 1.  control panel
