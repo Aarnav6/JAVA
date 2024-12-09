@@ -1,3 +1,5 @@
+
+
 class VarArgs {
 
     public int sum (int... arry) { // varargs symbol always fowllows with the data type of cara args
@@ -18,7 +20,7 @@ class VarArgs {
         }
         return result;
     }
-    public int sum (String name,int... arry) { // varargs symbol always fowllows with the data type of cara args
+    public int sum (String n ,int... arry) { // varargs symbol always fowllows with the data type of cara args
         System.out.println("running through overload 2");
         int result = 0;
         for(int i : arry) {  // for loop which itrates over arays from i to arry
@@ -46,6 +48,8 @@ class VarArgs {
 
 // Position: Varargs must always be the last parameter in the method signature.
 
-// Multiple varargs are not allowed in java 
+// Multiple varargs are not allowed in java since varargs are the last parameter 
+
+// might give the ambiguity error in java if overloaded in wrong manner
 
 */

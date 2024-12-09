@@ -1,6 +1,6 @@
 import java.io.File;
 
-public class deleteJAV {
+public class deleteJAVA {
     public static void main(String[] args) {
 
         String directoryPath1 = "D:/Code/C++";
