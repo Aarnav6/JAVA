@@ -1,4 +1,3 @@
-
 class Employee {
     final private String Employee_Name = "Devanshu";
     private final double Employee_Salary = 100;
@@ -8,7 +7,7 @@ class Employee {
 }
 class Manager extends Employee{
     final private String Manager_Name = "Mr.Aarnav";
-    private final double Manager_Salary = 10000;
+    private final double Manager_Salary = 1000;
     public void Manager_Details () {
         System.out.println("Manager Name: " + Manager_Name + "\n" + "Manager_Salary: "+ Manager_Salary);
     }
