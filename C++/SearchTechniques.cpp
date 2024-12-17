@@ -1,6 +1,5 @@
 # include <iostream>
 using namespace std;
-
 class searching {
     private:
             // this is the array to seach
@@ -8,17 +7,17 @@ class searching {
 
             // this is the sorting function to sort array when binary search is used
             void sort(int cloned_arry[]) {
-            int length = sizeof(cloned_arry)/sizeof(cloned_arry[0]);
-            for (int i=0 ; i<length-1 ; i++) {
-                for(int j=0 ; j<length-1 ; j++) {
-                    if(cloned_arry[j] > cloned_arry[j+1]) {
-                        int temp = cloned_arry[j+1];
-                        cloned_arry[j+1] = cloned_arry[j];
-                        cloned_arry[j] = temp;
+                int length = sizeof(cloned_arry)/sizeof(cloned_arry[0]);
+                for (int i=0 ; i<length-1 ; i++) {
+                    for(int j=0 ; j<length-1 ; j++) {
+                        if(cloned_arry[j] > cloned_arry[j+1]) {
+                            int temp = cloned_arry[j+1];
+                            cloned_arry[j+1] = cloned_arry[j];
+                            cloned_arry[j] = temp;
+                        }
                     }
                 }
             }
-        }
     public:
             void LinearSearch(int item , int length) {
                 int i=0;
