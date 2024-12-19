@@ -9,8 +9,7 @@ class swapper {
         cout<<"enter value of x: ";
         cin>>x;
         cout<<"enter value of y: ";
-        cin>>y;
-
+        cin>>y;t 
         temp.x = x;
         x=y;
         y=temp.x;
