@@ -1,6 +1,6 @@
 class Fibonacci_seq {
     public static void main(String[] args) {
-        int sum=0;
+        int sum;
         int prev=0;
         int next=1;
         for(int i=0 ; i<30 ; i++) {
