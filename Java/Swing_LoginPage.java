@@ -27,7 +27,7 @@ public class Swing_LoginPage {
             public void actionPerformed(ActionEvent e) {
                 String username = userField.getText();
                 String password = new String(passwordField.getPassword());
-                if (username.equals("admin") && password.equals("12345")) {
+                if (username.equals("Aarnav") && password.equals("log123")) {
                     JOptionPane.showMessageDialog(frame, "Login Successful");
                 } else {
                     JOptionPane.showMessageDialog(frame, "Invalid Username or Password");
