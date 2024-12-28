@@ -1,7 +1,6 @@
 // lets go new begning of tower of hanoi game
 
 import java.util.Scanner;
-import jdk.jshell.spi.ExecutionControl;
 
 class Tower {
     private int Tow1[] = { 10, 20, 30, 40, 50 };
@@ -38,8 +37,6 @@ class Tower {
             case 3 -> System.out.println("picked the disk of weight: " + Tow3[DiskPick] + " Disk");
             default-> throw new RuntimeException("error ocurred tempReturn is -999");
         }
-    }
-    public void Put () {
         System.out.print("enter tower no to put disk: ");
         TowerPut = sc.nextInt();
         if (TowerPut != 1 && TowerPut != 2 && TowerPut != 3) {
@@ -52,7 +49,7 @@ class Tower {
         }
         DiskPut--;
     }
-    public void Swap() {
+    public void Put() {
         int tempHolder;
         switch(TowerPut) {
             case 1 -> {
@@ -87,7 +84,6 @@ class NEW_TOH {
         run.Show();
         run.Pick();
         run.Put();
-        run.Swap();
         run.Show();
     }
 }
