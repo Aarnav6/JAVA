@@ -10,7 +10,7 @@ class Tower {
     Scanner sc = new Scanner(System.in);
 
     public void Show() {
-        for (int i=0 ; i<5 ; i++) {
+        for (int i = 0; i < 5; i++) {
             System.out.print(Tow1[i]);
             System.out.print("\t");
             System.out.print(Tow2[i]);
@@ -19,6 +19,7 @@ class Tower {
             System.out.print("\n");
         }
     }
+
     public void Pick() {
         System.out.print("enter tower no to pick disk: ");
         TowerPick = sc.nextInt();
@@ -32,10 +33,10 @@ class Tower {
         }
         DiskPick--;
         switch (TowerPick) {
-            case 1 ->System.out.println("picked the disk of weight: " + Tow1[DiskPick] + " Disk");
-            case 2 ->System.out.println("picked the disk of weight: " + Tow2[DiskPick] + " Disk");
+            case 1 -> System.out.println("picked the disk of weight: " + Tow1[DiskPick] + " Disk");
+            case 2 -> System.out.println("picked the disk of weight: " + Tow2[DiskPick] + " Disk");
             case 3 -> System.out.println("picked the disk of weight: " + Tow3[DiskPick] + " Disk");
-            default-> throw new RuntimeException("error ocurred tempReturn is -999");
+            default -> throw new RuntimeException("error ocurred tempReturn is -999");
         }
         System.out.print("enter tower no to put disk: ");
         TowerPut = sc.nextInt();
@@ -49,31 +50,42 @@ class Tower {
         }
         DiskPut--;
     }
+
     public void Put() {
         int tempHolder;
-        switch(TowerPut) {
+        int val;
+        switch (TowerPick) {
+            case 1 -> val = Tow1[DiskPick];
+            case 2 -> val = Tow2[DiskPick];
+            case 3 -> val = Tow3[DiskPick];
+            default -> {
+                val = -999;
+                System.out.println("error occurred val = -999");
+            }
+        }
+        switch (TowerPut) {
             case 1 -> {
                 tempHolder = Tow1[DiskPut];
-                Tow1[DiskPut] = Tow1[DiskPick];
+                Tow1[DiskPut] = val;
             }
             case 2 -> {
                 tempHolder = Tow2[DiskPut];
-                Tow2[DiskPut] = Tow2[DiskPick];
+                Tow2[DiskPut] = val;
             }
             case 3 -> {
                 tempHolder = Tow3[DiskPut];
-                Tow3[DiskPut] = Tow3[DiskPick];
+                Tow3[DiskPut] = val;
             }
             default -> {
                 tempHolder = -999;
-                System.out.println("error occureed tempHolder = -999");
+                System.out.println("error occurred tempHolder = -999");
             }
         }
-        switch(TowerPick) {
+        switch (TowerPick) {
             case 1 -> Tow1[DiskPick] = tempHolder;
             case 2 -> Tow2[DiskPick] = tempHolder;
             case 3 -> Tow3[DiskPick] = tempHolder;
-            default -> System.out.println("error occured");
+            default -> System.out.println("error occurred");
         }
     }
 }

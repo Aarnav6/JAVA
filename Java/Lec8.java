@@ -165,7 +165,7 @@ class Lec8 {
         } 
             catch (InputMismatchException e) 
             {
-                System.out.println("error occured");
+                System.out.println("error occurred");
             }
     }
     
