@@ -1,43 +1,93 @@
 // lets go new begning of tower of hanoi game
 
 import java.util.Scanner;
+import jdk.jshell.spi.ExecutionControl;
+
 class Tower {
-    private int Tow1[] = {10,20,30,40,50};
-    private int Tow2[] = {0 ,0 ,0 ,0 ,0};
-    private int Tow3[] = {0 ,0 ,0 ,0 ,0};
-    int Element ,ElementNo ,TowerNo ,Disk;
+    private int Tow1[] = { 10, 20, 30, 40, 50 };
+    private int Tow2[] = { 0, 0, 0, 0, 0 };
+    private int Tow3[] = { 0, 0, 0, 0, 0 };
+    int TowerPick, DiskPick, TowerPut, DiskPut;
     Scanner sc = new Scanner(System.in);
 
     public void Show() {
         for (int i=0 ; i<5 ; i++) {
-            System.out.println(Tow1[i]);
-            System.out.println("\n\n\n");
-            System.out.println(Tow2[i]);
-            System.out.println("\n\n\n");
-            System.out.println(Tow3[i]);
+            System.out.print(Tow1[i]);
+            System.out.print("\t");
+            System.out.print(Tow2[i]);
+            System.out.print("\t");
+            System.out.print(Tow3[i]);
+            System.out.print("\n");
         }
     }
-    public void SelectForPick() {
-        System.out.println("Tower no: ");
-        TowerNo = sc.nextInt();
-        if(TowerNo != 1 || TowerNo != 1 || TowerNo != 1) {
-            throw new RuntimeException("Not Valid Input");
+    public void Pick() {
+        System.out.print("enter tower no to pick disk: ");
+        TowerPick = sc.nextInt();
+        if (TowerPick != 1 && TowerPick != 2 && TowerPick != 3) {
+            throw new RuntimeException("\n Tower doesnt exist");
         }
-        System.out.println("Element no: ");
-        ElementNo = sc.nextInt();
-        switch(TowerNo-1) {
-            case 0-> {
-                Disk = Tow1[ElementNo];
-                System.out.println("picked the: " + Tow1[Disk]+" Disk");
-            }
+        System.out.print("Disk no: ");
+        DiskPick = sc.nextInt();
+        if (DiskPick != 1 && DiskPick != 2 && DiskPick != 3 && DiskPick != 4 && DiskPick != 5) {
+            throw new RuntimeException("\nDisk doesnt exist");
+        }
+        DiskPick--;
+        switch (TowerPick) {
+            case 1 ->System.out.println("picked the disk of weight: " + Tow1[DiskPick] + " Disk");
+            case 2 ->System.out.println("picked the disk of weight: " + Tow2[DiskPick] + " Disk");
+            case 3 -> System.out.println("picked the disk of weight: " + Tow3[DiskPick] + " Disk");
+            default-> throw new RuntimeException("error ocurred tempReturn is -999");
+        }
+    }
+    public void Put () {
+        System.out.print("enter tower no to put disk: ");
+        TowerPut = sc.nextInt();
+        if (TowerPut != 1 && TowerPut != 2 && TowerPut != 3) {
+            throw new RuntimeException("\n Tower doesnt exist");
+        }
+        System.out.print("Disk no: ");
+        DiskPut = sc.nextInt();
+        if (DiskPut != 1 && DiskPut != 2 && DiskPut != 3 && DiskPut != 4 && DiskPut != 5) {
+            throw new RuntimeException("\nDisk doesnt exist");
+        }
+        DiskPut--;
+    }
+    public void Swap() {
+        int tempHolder;
+        switch(TowerPut) {
             case 1 -> {
-                System.out.println("picked the: " + Tow2[Disk]+" Disk");
-                Disk = Tow2[ElementNo];
+                tempHolder = Tow1[DiskPut];
+                Tow1[DiskPut] = Tow1[DiskPick];
             }
             case 2 -> {
-                System.out.println("picked the: " + Tow3[Disk]+" Disk");
-                Disk = Tow3[ElementNo];
+                tempHolder = Tow2[DiskPut];
+                Tow2[DiskPut] = Tow2[DiskPick];
+            }
+            case 3 -> {
+                tempHolder = Tow3[DiskPut];
+                Tow3[DiskPut] = Tow3[DiskPick];
+            }
+            default -> {
+                tempHolder = -999;
+                System.out.println("error occureed tempHolder = -999");
             }
         }
+        switch(TowerPick) {
+            case 1 -> Tow1[DiskPick] = tempHolder;
+            case 2 -> Tow2[DiskPick] = tempHolder;
+            case 3 -> Tow3[DiskPick] = tempHolder;
+            default -> System.out.println("error occured");
+        }
+    }
+}
+
+class NEW_TOH {
+    public static void main(String args[]) {
+        Tower run = new Tower();
+        run.Show();
+        run.Pick();
+        run.Put();
+        run.Swap();
+        run.Show();
     }
 }
