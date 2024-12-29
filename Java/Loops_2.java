@@ -1,4 +1,4 @@
-public class Lec6
+public class Loops_2
 {
 public static void main(String args[])
 {

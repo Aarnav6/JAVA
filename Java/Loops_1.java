@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Lec5 {
+public class Loops_1 {
 
     public static void main(String agrs[]) {
         int row, col, n, counter = 0;

@@ -1,5 +1,5 @@
 import java.util.*;
-public class Lec5_HW
+public class Loops_HW
 {
 public static void main(String args[])
 {

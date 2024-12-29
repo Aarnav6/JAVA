@@ -73,25 +73,25 @@ class bit_functions {
     
 }
 
-class Lec15 extends bit_functions{
+public class BitsMasking extends bit_functions{
 
     public static void main (String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter any number");
         int num = sc.nextInt();
         System.out.print(num + " in binary is: ");
-        Lec15.binaryConvert(num);
+        BitsMasking.binaryConvert(num);
 
-        System.out.println("\n\nbit on the 2nd position is: " + Lec15.getBit(5,2));
+        System.out.println("\n\nbit on the 2nd position is: " + BitsMasking.getBit(5,2));
 
         System.out.print("\n\nusing setBit(5,1): ");
-        Lec15.binaryConvert(Lec15.setBit(5,1));
+        BitsMasking.binaryConvert(BitsMasking.setBit(5,1));
 
         System.out.print("\n\nusing clearBit(5,2): ");
-        Lec15.binaryConvert(Lec15.clearBit(5,2));
+        BitsMasking.binaryConvert(BitsMasking.clearBit(5,2));
 
         System.out.print("\n\nusing UpdateBit(5,3,1): ");
-        Lec15.binaryConvert(Lec15.UpdateBit(5,3,9));
+        BitsMasking.binaryConvert(BitsMasking.UpdateBit(5,3,9));
 
     }
 }
