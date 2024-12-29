@@ -222,7 +222,7 @@
 //         // create a class object then use classobject.Picked_Disk(); this also works
 //     }
 // }
-// class TOH {
+// class TOH_1 {
 //     public static void main(String[] args) {
 //     Execution Run = new Execution();
 //     Run.Execute();
