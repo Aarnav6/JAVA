@@ -91,7 +91,7 @@
 //         BitsMasking.binaryConvert(BitsMasking.clearBit(5,2));
 
 //         System.out.print("\n\nusing UpdateBit(5,3,1): ");
-//         BitsMasking.binaryConvert(BitsMasking.UpdateBit(5,3,9));
+//         BitsMasking.binaryConvert(BitsMasking.UpdateBit(5,3,1));
 
 //         sc.close();
 //     }
