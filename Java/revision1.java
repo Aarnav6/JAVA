@@ -1,7 +1,7 @@
 
 class patterns {
     public static void threeD_pyramid() {
-        int n = 30;
+        int n = 20;
         for (int i=1 ; i<=n ; i++) {
             ////////////////////////////////////////////////////// inner1
             for (int j=1 ; j<n-i ; j++) {

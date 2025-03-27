@@ -39,3 +39,19 @@ public class Fibonacii {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+/////////// more simpler approach
+// public class Fibonacii {
+//     public static void fib(int n, int prev, int next) {
+//         if(n == 0) {
+//             return;
+//         }
+//         int sum = prev + next;
+//         System.out.println(sum);
+//         fib(n--,next,sum);
+//     }
+//     public static void main(String args[]) {
+//         System.out.println("0"+"\n"+"1");
+//         fib(10,0,1);
+//     }
+// }
