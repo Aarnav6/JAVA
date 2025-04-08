@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
-class Stone_Paper_Scissors {
+class Stone_Paper_Scissor {
     private static String comp;
     public static int check1(String in) {
         in = in.toLowerCase();
@@ -17,7 +17,7 @@ class Stone_Paper_Scissors {
                     temp = 2;
                 }
             }
-            case "paper" ->{;
+            case "paper" ->{
                 if(comp.equalsIgnoreCase("paper")){
                     temp = 2;
                 }
@@ -57,6 +57,7 @@ class Stone_Paper_Scissors {
         }
     public static void Executor() {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to Stone Paper Scissor Game");
         System.out.print("enter No. of Rounds: ");
         int iteration = sc.nextInt();
         for(int i=0 ; i<iteration ; i++) {
@@ -69,6 +70,10 @@ class Stone_Paper_Scissors {
         sc.close();
     }
     public static void main(String[] args) {
-        Stone_Paper_Scissors.Executor();
-        }
+        Stone_Paper_Scissor.Executor(); 
+    }
 }
+// Executor() runs code in steps
+// check1() finds the win , loss and draw match then returns the integer based on outcome
+// check2() prints the outcome based on output of the check 1 integer output
+// compIntilisor() intitialize the random string computer varriable
