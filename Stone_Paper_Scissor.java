@@ -44,8 +44,8 @@ class Stone_Paper_Scissor {
     }
     public static void check2 (int res) {
         switch(res) {
-            case 0 -> System.out.printf("You Lose, Computer picked: %s \n",comp);
-            case 1 -> System.out.printf("You Won, Computer lost by picking %s \n",comp);
+            case 0 -> System.out.printf("You Lose, Computer picked: %s \n\n",comp);
+            case 1 -> System.out.printf("You Won, Computer lost by picking %s \n\n",comp);
             case 2 -> System.out.println("Match Draw \n");
             case 999 -> System.out.println("Wrong Input String \n");
         }
