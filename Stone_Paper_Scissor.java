@@ -53,7 +53,7 @@ class Stone_Paper_Scissor {
     public static void compIntialisor() {
         Random random = new Random();
         String arr[] = {"STONE","PAPER","SCISSOR"};
-        comp = arr[random.nextInt(arr.length-1)];
+        comp = arr[random.nextInt(arr.length)];
         }
     public static void Executor() {
         Scanner sc = new Scanner(System.in);
