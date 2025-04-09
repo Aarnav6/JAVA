@@ -176,9 +176,8 @@
 //         sb.append('A');
 //         sb.append('.');
 //         sb.append('T');
-
+//         System.out.println(sb);
 //         System.out.println("\n \n \n");
-        
 //         String_Reverse1();
 //         String_Palindrome();
 //         String_Reverse2();
