@@ -5,7 +5,7 @@ class Game {
     private int UserGuess;
     private int nTurn; 
     private boolean set = false;
-    final Scanner sc = new Scanner(System.in);
+    private final Scanner sc = new Scanner(System.in);
     public void NumGenrator () {
         Random rand = new Random();
         this.RandomNum = rand.nextInt(0,100);
