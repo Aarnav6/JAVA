@@ -5,12 +5,12 @@ class Game {
     private int UserGuess;
     private int nTurn; 
     private boolean set = false;
+    final Scanner sc = new Scanner(System.in);
     public void NumGenrator () {
         Random rand = new Random();
         this.RandomNum = rand.nextInt(0,100);
     }
     public void TakeInput() {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Take a Guess: ");
         this.UserGuess = sc.nextInt();
     }
