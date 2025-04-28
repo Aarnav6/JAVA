@@ -1,6 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 class Stone_Paper_Scissor {
+    private final static Scanner sc = new Scanner(System.in);
     private static String comp;
     public static int check1(String in) {
         in = in.toLowerCase();
@@ -56,7 +57,6 @@ class Stone_Paper_Scissor {
         comp = arr[random.nextInt(arr.length)];
         }
     public static void Executor() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to Stone Paper Scissor Game");
         System.out.print("enter No. of Rounds: ");
         int iteration = sc.nextInt();
@@ -67,10 +67,9 @@ class Stone_Paper_Scissor {
             int result = check1(input);
             check2(result);
         }
-        sc.close();
     }
     public static void main(String[] args) {
-        Stone_Paper_Scissor.Executor(); 
+        Stone_Paper_Scissor.Executor();
     }
 }
 // Executor() runs code in steps
