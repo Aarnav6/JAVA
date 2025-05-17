@@ -1,7 +1,7 @@
 // literals in java are value that can be stored 
 // any decimal value in java is double by default
 // any number or integer value in java is integer by default
-// each primitive data has its own class in java
+// each primitive data has its own class in java which is known as warpper class
 class Literals_by_CodeWithHarry {
     public static void main(String[] args) {
         float dec = 25.6f;
