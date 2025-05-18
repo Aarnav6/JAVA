@@ -1,3 +1,4 @@
+/*
 abstract class A {
     public void show () {
         System.out.println("A class show function");
@@ -17,3 +18,4 @@ public class AbstractAnonymousInnerClass {
         
     }
 }
+*/
