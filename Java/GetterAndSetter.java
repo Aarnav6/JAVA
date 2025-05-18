@@ -26,7 +26,7 @@
 
 // /*
 // class a {
-//     private int x; // gives an error 
+//     private int x; // gives an error     
 // }
 
 // class GetterAndSetter {
