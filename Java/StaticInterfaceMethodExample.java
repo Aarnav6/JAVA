@@ -1,3 +1,5 @@
+/*
+
 public class StaticInterfaceMethodExample {
 
     interface MyInterface {
@@ -50,3 +52,5 @@ public class StaticInterfaceMethodExample {
         refB.defaultMethod(); // Output: MyInterface: Default method (ImplementationB uses the default)
     }
 }
+
+*/
