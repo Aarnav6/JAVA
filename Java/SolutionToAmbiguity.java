@@ -1,3 +1,5 @@
+/*
+
 // Interface A with a default method
 interface A {
     default void display() {
@@ -16,7 +18,7 @@ interface B {
 // Must override display() to resolve conflict
 public class SolutionToAmbiguity implements A, B {
     // Overriding the display() method to avoid ambiguity
-    // @Override
+    @Override
     public void display() {
         System.out.println("display from C");
     }
@@ -26,3 +28,6 @@ public class SolutionToAmbiguity implements A, B {
         obj.display();  // Output: Display from C
     }
 }
+
+
+*/
