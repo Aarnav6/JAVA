@@ -2,7 +2,7 @@
 
 class VarArgs {
 
-    public int sum (int... arry) { // varargs symbol always fowllows with the data type of cara args
+    public int sum (int... arry) { // varargs symbol always fowllows with the data type of var args
         System.out.println("running through default");
         int result = 0;
         for(int i : arry) {  // for loop which itrates over arays from i to arry
@@ -11,7 +11,7 @@ class VarArgs {
         }
         return result;
     }
-    public int sum (float x,int... arry) { // varargs symbol always fowllows with the data type of cara args
+    public int sum (float x,int... arry) { // varargs symbol always fowllows with the data type of var args
         System.out.println("running through overload 1");
         int result = 0;
         for(int i : arry) {  // for loop which itrates over arays from i to arry
@@ -20,7 +20,7 @@ class VarArgs {
         }
         return result;
     }
-    public int sum (String n ,int... arry) { // varargs symbol always fowllows with the data type of cara args
+    public int sum (String n ,int... arry) { // varargs symbol always fowllows with the data type of var args
         System.out.println("running through overload 2");
         int result = 0;
         for(int i : arry) {  // for loop which itrates over arays from i to arry
