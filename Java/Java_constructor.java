@@ -7,7 +7,7 @@
 //         System.out.println("im a Base class constructor with 1 parameter a: " + a);
 //     }
 //     Base(int a ,int b) {
-//         System.out.println("im a Derived class constructor with 2 parameter a: " + a + " b: "+b);
+//         System.out.println("im a Base class constructor with 2 parameter a: " + a + " b: "+b);
 //     }
 //     public int getX() {
 //         return x;
