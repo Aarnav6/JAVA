@@ -1,3 +1,4 @@
+package Array;
 class Student {
     final private String name; 
     final private byte marks; 
