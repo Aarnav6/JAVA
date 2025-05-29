@@ -1,3 +1,4 @@
+/*
 // literals in java are value that can be stored 
 // any decimal value in java is double by default
 // any number or integer value in java is integer by default
@@ -10,3 +11,4 @@ class Literals_by_CodeWithHarry {
         System.out.println(lam);
     }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 public class Loops_2
 {
 public static void main(String args[])
@@ -58,3 +59,4 @@ for (int i=row ; i>=1 ; i-- )
 
 }
 }
+*/

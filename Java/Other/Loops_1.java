@@ -1,3 +1,4 @@
+/*
 import java.util.Scanner;
 
 public class Loops_1 {
@@ -200,3 +201,4 @@ public class Loops_1 {
         } // try-with-resources block ends here, and all Scanner objects are automatically closed
     }
 }
+*/
