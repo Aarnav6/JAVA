@@ -1,3 +1,4 @@
+/*
 public class NewSwitch {
     public static void method1 () {         // method 1
         int a = 6;
@@ -88,3 +89,4 @@ public class NewSwitch {
         NewSwitch.method5();
     }
 }
+*/

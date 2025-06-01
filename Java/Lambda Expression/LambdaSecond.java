@@ -1,3 +1,4 @@
+/*
 @FunctionalInterface
 interface A {
     int sum(int... VarArr); // using var args here to return the sum of given arguments
@@ -30,34 +31,36 @@ public class LambdaSecond {
 
     }
 }
+
+
 // i learned new thing that in string.format() we can use %S for upper case String and s% for string as it is
-/*
-This lecture introduces Lambda Expressions with return statements.
+// This lecture introduces Lambda Expressions with return statements.
 
-It explains how to:
-Create a functional interface
-Implement it using a lambda expression
-Use both single-line and multi-line lambda syntax with return
-Emphasis is on how return works and when braces {} and return are required. 
 
-code 1:- 
-    public class Demo {
-        public static void main(String[] args) {
-            A obj = (i, j) -> i + j;
-            int result = obj.add(5, 3);
-            System.out.println("Result: " + result); // Output: 8
-        }
-    }
-code 2:- 
-    public class Demo {
-        public static void main(String[] args) {
-            A obj = (i, j) -> {
-                System.out.println("Adding numbers...");
-                return i + j;
-            };
-            int result = obj.add(5, 3);
-            System.out.println("Result: " + result); // Output: 8
-        }
-    }
+// It explains how to:
+// Create a functional interface
+// Implement it using a lambda expression
+// Use both single-line and multi-line lambda syntax with return
+// Emphasis is on how return works and when braces {} and return are required. 
+// 
+// code 1:- 
+//     public class Demo {
+//         public static void main(String[] args) {
+//             A obj = (i, j) -> i + j;
+//             int result = obj.add(5, 3);
+//             System.out.println("Result: " + result); // Output: 8
+//         }
+//     }
+// code 2:- 
+//     public class Demo {
+//         public static void main(String[] args) {
+//             A obj = (i, j) -> {
+//                 System.out.println("Adding numbers...");
+//                 return i + j;
+//             };
+//             int result = obj.add(5, 3);
+//             System.out.println("Result: " + result); // Output: 8
+//         }
+//     }
 
 */
