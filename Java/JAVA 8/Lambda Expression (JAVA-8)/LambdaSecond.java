@@ -62,5 +62,14 @@ public class LambdaSecond {
 //             System.out.println("Result: " + result); // Output: 8
 //         }
 //     }
+// if in some cases let say u have only 1 parameter u can also do like 
+// code 3:- 
+//     public class Demo {
+//         public static void main(String[] args) {
+//             A obj = i -> System.out.println(++i) // u dont even need parenthesis for single parameter
+//             int result = obj.add(5, 3);
+//             System.out.println("Result: " + result); // Output: 8
+//         }
+//     }
 
 */

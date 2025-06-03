@@ -5,6 +5,7 @@ import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+
 public class MyFileWorker {
     public static void fileWriter(File file , Scanner scanner) throws IOException {
         if(!file.exists()) {
@@ -60,6 +61,7 @@ public class MyFileWorker {
     public static void fileReaderThroughScanner(File file) {
         if(!file.canRead()) {
             System.out.println("file is not readable");
+            return;
         }
         try(Scanner scanner = new Scanner(file)) {
             while(scanner.hasNext()) {
