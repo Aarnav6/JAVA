@@ -41,3 +41,13 @@ public class RaceInThreads {
  * can happen when multiple thread acess mutable varriable or object at the same time
  * due to this it might loose some operations and can give inconsistent results
  */
+
+//  public static void pushAtBottom (int data , Stack <Integer>) {
+//     if(s.isEmpty()) {
+//         s.push(data);
+//         return;
+//     }
+//     int top = s.pop();
+//     pushAtBottom(data,s);
+//     s.push(top);
+//  }
