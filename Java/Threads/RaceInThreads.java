@@ -35,3 +35,9 @@ public class RaceInThreads {
         }
     }
 }
+/*
+ * race condion in threads occur due to non synchronization
+ * 
+ * can happen when multiple thread acess mutable varriable or object at the same time
+ * due to this it might loose some operations and can give inconsistent results
+ */
