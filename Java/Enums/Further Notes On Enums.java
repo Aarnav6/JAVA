@@ -1,3 +1,4 @@
+/*
 In this lecture we will learn:
 Inheritance with the enum
 Super class of enum
@@ -11,7 +12,7 @@ We can define constructors and methods in an enum. Creation of our constructors 
 We can also define our data types through enum that are known as Enumerated Data Types.
 In Java, enum extends the enum class and we get all other methods present inside an enum through the enum class only.
 If we print the superclass of an enum class, then it will also return an enum.
- Status s= Status.Success;
+ Status s = Status.Success;
  System.out.println(s.getClass().getSuperclass());
 In an enum, every enum constant represents an object of type enum.
 
@@ -24,3 +25,4 @@ We can print the value of all objects of an enum through a loop and .values() me
 If any parameterized constructor is present inside an enum, then the default constructor will not be considered.
 We create private variables and private constructors in an enum because we use them or create an object for constructors in the same class only.
 The constructor in an enum will be called the number of times as much the number of objects created.
+*/

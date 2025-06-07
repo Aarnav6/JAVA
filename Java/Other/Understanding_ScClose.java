@@ -19,7 +19,8 @@
 //         System.out.print("enter another value: ");
 //         //val = sc.nextInt(); this line here will not run here because of sc.close() in 12th line so
 //         val = scanner1.nextInt(); // so i created new object
-//         scanner1.close(); //but its not working the reason being sc.close() closes underlying input stream, so close scanner only when your finished taking inputs
+//         scanner1.close(); // but its not working the reason being sc.close() closes underlying input stream, 
+                            //  so close scanner only when your finished taking inputs
 //         System.out.println("you entred " + val);
 
 //     }

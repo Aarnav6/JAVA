@@ -4,20 +4,20 @@ public class Vehicle {
     String color;
 
     public Vehicle() {
-        System.out.println("Vehicle: Default constructor called.");
+        System.out.println("Vehicle: Default constructor called");
         this.engineType = "Generic";
         this.numberOfWheels = 4;
     }
 
     public Vehicle(String engineType) {
         this(); // Calls the default constructor first
-        System.out.println("Vehicle: Constructor with engineType called. Engine type: " + engineType);
+        System.out.println("Vehicle: Constructor with engineType called, Engine type: " + engineType);
         this.engineType = engineType;
     }
 
     public Vehicle(String engineType, int numberOfWheels, String color) {
         this(engineType); // Calls the constructor with engineType first
-        System.out.println("Vehicle: Constructor with engineType, numberOfWheels, and color called. Wheels: " + numberOfWheels + ", Color: " + color);
+        System.out.println("Vehicle: Constructor with engineType, numberOfWheels and color called, Wheels: " + numberOfWheels + ", Color: " + color);
         this.numberOfWheels = numberOfWheels;
         this.color = color;
     }

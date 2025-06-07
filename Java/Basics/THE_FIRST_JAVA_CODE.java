@@ -1,4 +1,4 @@
-public class Lec1 {
+public class THE_FIRST_JAVA_CODE {
 
 	public static void main(String args[]) {
 		System.out.println("Hello Java Im here !");

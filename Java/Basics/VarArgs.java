@@ -1,6 +1,4 @@
-
-
-class VarArgs {
+public class VarArgs {
 
     public int sum (int... arry) { // varargs symbol always fowllows with the data type of var args
         System.out.println("running through default");
