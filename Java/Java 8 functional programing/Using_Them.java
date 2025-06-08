@@ -1,7 +1,9 @@
+@SuppressWarnings("unused")
 import java.util.Random;
 import java.util.function.*;
 public class Using_Them {
     public static void main(String[] args) {
+        @SuppressWarnings("unused")
         Predicate<Integer> predicate = x -> x%2==0;
         Function<Integer, Integer> function = x -> x*x*x;
         Consumer<Integer> consumer = x -> System.out.println("consuming: " + x);
