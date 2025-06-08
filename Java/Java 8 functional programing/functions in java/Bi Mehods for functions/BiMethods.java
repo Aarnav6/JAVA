@@ -1,3 +1,4 @@
+/*
 import java.util.function.BiPredicate;
 import java.util.function.BiFunction;
 import java.util.function.BiConsumer;
@@ -15,3 +16,4 @@ public class BiMethods {
         // note that BiSupplier does not exist since a function can only return 1 value in java
     }
 }
+*/
