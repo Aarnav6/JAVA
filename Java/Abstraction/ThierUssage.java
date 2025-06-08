@@ -11,7 +11,7 @@ public class ThierUssage {
     public static void main(String[] args) {
         //lambda expression => 
         
-        //int a = 5; // this is an loca
+        //int a = 5; // this is an local
         IsAnFunctionalInterface A = () -> {
             System.out.println("were dancing");
             // a = 50; // not possible to use local varriable since its not final 
