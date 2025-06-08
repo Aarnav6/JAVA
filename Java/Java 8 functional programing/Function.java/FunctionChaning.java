@@ -5,7 +5,8 @@ public class FunctionChaning {
         Function<Integer, Integer> giveCube = x -> x*x*x;
         
         Function<Integer, Integer> func1 = doubleIt.andThen(giveCube); 
-        Function<Integer, Integer> func2 = doubleIt.compose(giveCube); 
+        Function<Integer, Integer> func2 = doubleIt.compose(giveCube);
+        Function<String , String> func3 = Function.identity(); // this returns exactly whatever is passed into it
         // compose actually means reversing the andThen like as an example 
         // Function<Integer, Integer> func1 = x -> giveCube.andThen(doubleIt).apply(x); this is actually compose compared with first method 
         // the above line using giveCube.andThen(doubleIt) it runs as give cube first then double but,
@@ -14,5 +15,6 @@ public class FunctionChaning {
         System.out.println(giveCube.apply(3)); // (prints) = 27
         System.out.println(func1.apply(3)); // pass 3 double = 6  then cube of 6 = 216 , (prints) = 216
         System.out.println(func2.apply(3)); // pass 3 cube = 27 then double of 27 = 54 , (prints) = 54
+        System.out.println(func3.apply("this will be returned as an string")); // prints whatever is passed
     }
 }
