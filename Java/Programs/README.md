@@ -11,6 +11,9 @@ I'm currently finishing my Data Structures and Algorithms (DSA) studies in Java 
 ## 🌱 Currently Learning
 I'm currently diving into:
 - Software Development Practices
+   - RDBMS - postgrate sql
+   - Spring FrameWorks
+
 
 ## 📫 Get in Touch
 - [Email Me](mailto:aarnavs100@gmail.com)
